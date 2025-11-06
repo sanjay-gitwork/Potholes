@@ -1,0 +1,17 @@
+   body { height:100%; }
+    #map { height: calc(100vh - 160px); border-radius: 10px; }
+    .popup-img { width: 160px; height: 100px; object-fit: cover; border-radius: 6px; display:block; margin-top:6px }
+    /* Top overlay filter panel */
+    .map-topbar { position: absolute; left: 50%; transform: translateX(-50%); top: 12px; z-index: 1000; width: calc(100% - 2rem); max-width: 1100px; }
+    .map-topbar .card { backdrop-filter: blur(6px); }
+    
+    /* Toast animation */
+    .toast {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.4s ease, transform 0.4s ease;
+    }
+    .toast.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
